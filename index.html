@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1rem;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-price {
+            color: #e74c3c;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-description {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .buy-button {
+            background-color: #2ecc71;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #27ae60;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1rem;
+            }
+            
+            .products {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Tokgooy</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Selamat Datang di Toko Online Yoga</h2>
+        <p>Temukan berbagai produk berkualitas dengan harga terbaik</p>
+    </section>
+
+    <div class="container">
+        <h2>Produk Terbaru</h2>
+        <div class="products">
+            <!-- Produk 1 -->
+            <div class="product-card">
+                <img src="https://png.pngtree.com/png-clipart/20230417/original/pngtree-mens-transparent-sneakers-casual-shoes-png-image_9062509.png" alt="Produk 1" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Sepatu Running</h3>
+                    <p class="product-price">Rp 899.000</p>
+                    <p class="product-description">Sepatu running berkualitas tinggi dengan teknologi terbaru untuk kenyamanan maksimal.</p>
+                    <button class="buy-button">Beli Sekarang</button>
+                </div>
+            </div>
+
+            <!-- Produk 2 -->
+            <div class="product-card">
+                <img src="https://cf.shopee.co.id/file/358cc58217e1606ac3060ff9b2481a25" alt="Produk 2" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Tas Ransel</h3>
+                    <p class="product-price">Rp 450.000</p>
+                    <p class="product-description">Tas ransel dengan desain modern dan compartment yang luas.</p>
+                    <button class="buy-button">Beli Sekarang</button>
+                </div>
+            </div>
+
+            <!-- Produk 3 -->
+            <div class="product-card">
+                <img src="https://s0.bukalapak.com/img/5483888462/w-1000/jam_tangan_pria_ROLEX_original_outomatick_tali_kulit_super_s.jpg" alt="Produk 3" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Jam Tangan</h3>
+                    <p class="product-price">Rp 1.299.000</p>
+                    <p class="product-description">Jam tangan elegant dengan bahan berkualitas tinggi.</p>
+                    <button class="buy-button">Beli Sekarang</button>
+                </div>
+            </div>
+
+            <!-- Produk 4 -->
+            <div class="product-card">
+                <img src="https://www.bhphotovideo.com/images/images2500x2500/skullcandy_s6hbgy_374_hesh_2_bluetooth_headphones_1085703.jpg" alt="Produk 4" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Headphone Bluetooth</h3>
+                    <p class="product-price">Rp 799.000</p>
+                    <p class="product-description">Headphone wireless dengan kualitas suara premium.</p>
+                    <button class="buy-button">Beli Sekarang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Toko Online. Hak Cipta Dilindungi.</p>
+    </footer>
+</body>
+</html>
